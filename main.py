@@ -41,8 +41,8 @@ app = FastAPI()
 #----SETUP MIDDLEWARES--------------------
 # Allow these origins to access the API
 origins = [	
-	"http://my-app-4bad.onrender.com",
-	"https://my-app-4bad.onrender.com",		
+	"https://projects-maneger.onrender.com",
+	"https://projects-maneger.onrender.com",		
 	"http://localhost",
 	"http://localhost:8080",
 	"https://localhost:8080",
