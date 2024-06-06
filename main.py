@@ -729,6 +729,7 @@ async def update_material(current_user: Annotated[schemas.User, Security(get_cur
 	db_material = db.query(models.Material).filter(models.Material.material_id == material_id).first()
 	if db_material is None:
 		raise HTTPException(status_code=404, detail="Material not found")
+	db_material.material_name=material.material_name
 	db_material.material_quantity=material.material_quantity
 	db_material.material_price=material.material_price
 	db_material.material_amount=(material.material_quantity * material.material_price)

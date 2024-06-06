@@ -81,6 +81,7 @@ class ProjectInDB(Project):
 #-------MATERIAL-------------
 #-------------------------
 class MaterialUPD(BaseModel):
+	material_name: str
 	material_quantity : int
 	material_price : float
 			
